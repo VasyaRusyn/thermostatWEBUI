@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>My Home</title>
+  </head>
+  <body>
+<div class="row">
+      <div class="content">
+        <div class="Settings"><button class="setting_btn"></button></div>
+        <div class="nav">
+          <div class="setap_div ">
+                <button  class="setap_btn " type="button" name="button"></button>
+          </div>
+
+          <div class="setap_div auto_div">
+                <button  class="auto" id="auto" type="button" name="button"></button>
+          </div>
+           <div class="setap_div">
+             <button  class="eco_active" type="button" name="button"></button>
+          </div>
+          <div class="setap_div">
+          <button class="off" type="button" name="button"></button>
+          </div>
+        </div>
+        <div class="date">
+          <div class="time">
+            <span id="time"></span>
+          </div>
+          <div class="day">
+            <span id="date"></span>
+          </div>
+        </div>
+        <div class="auto_setting hidden"><p>Setting</p> </div>
+
+        <div class="setting_block hidden">
+          <div class="off_setting"><div class="off_icon"></div><p>Here you can change the optimal temperature for you, in the off mode. The temperature is adjustable from 5 to 10 ℃</p><div class="off_input_value"><input class="input_off_sett"  type="number" value="5" min="5" max="10"> </div><div class="save_of_div"></div></div>
+          <div class="eco_setting"><div class="eco_icon"></div><p>Here the temperature can be optimum for you, in the energy saving mode. Temperatures are regulated from 12 to 18 ℃</p><div class="eco_input_value"><input class="input_eco_sett" type="number" value="15" min="12" max="18"> </div> <button class="save_of">Save</button></div>
+        </div>
+        
+        <div class="days_setting hidden">
+          <div class="Monday day_setting">
+            <h5>Monday</h5>
+            <div class="period1">1 Period 
+                <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="06" min="00" max="23"></label>
+                 <label for="">Minute <input class="period_hour" id="min" type="number" value="00" min="00" max="60"></label></div>
+                 <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="18" min="5" max="35"></label></div>
+                    </div>
+                    <div class="period1">2 Period
+                      <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="09" min="00" max="23"></label>
+                        <label for="">Minute <input class="period_hour" id="min" type="number" value="00" min="00" max="60"></label></div>
+                        <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="22" min="5" max="35"></label></div>
+                    </div>
+                    <div class="period1">3 Period
+                      <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="13" min="00" max="23"></label>
+                        <label for="">Minute <input class="period_hour" id="min" type="number" value="30" min="00" max="60"></label></div>
+                        <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="16" min="5" max="35"></label></div>
+                    </div>
+                    <div class="period1">4 Period
+                      <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="18" min="00" max="23"></label>
+                        <label for="">Minute <input class="period_hour" id="min" type="number" value="49" min="00" max="60"></label></div>
+                        <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="18" min="5" max="35"></label></div>
+                    </div>
+                    <div class="period1">5 Period
+                      <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="21" min="00" max="23"></label>
+                        <label for="">Minute <input class="period_hour" id="min" type="number" value="48" min="00" max="60"></label></div>
+                        <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                    </div>
+          </div>
+          <div class="Tuesday day_setting">
+            <h5>Tuesday</h5>
+            <div class="period1">1 Period 
+              <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="06" min="00" max="23"></label>
+               <label for="">Minute <input class="period_hour" id="min" type="number" value="00" min="00" max="60"></label></div>
+               <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+                  <div class="period1">2 Period
+                    <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="09" min="00" max="23"></label>
+                      <label for="">Minute <input class="period_hour" id="min" type="number" value="00" min="00" max="60"></label></div>
+                      <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+                  <div class="period1">3 Period
+                    <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="13" min="00" max="23"></label>
+                      <label for="">Minute <input class="period_hour" id="min" type="number" value="30" min="00" max="60"></label></div>
+                      <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+                  <div class="period1">4 Period
+                    <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="17" min="00" max="23"></label>
+                      <label for="">Minute <input class="period_hour" id="min" type="number" value="00" min="00" max="60"></label></div>
+                      <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+                  <div class="period1">5 Period
+                    <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="22" min="00" max="23"></label>
+                      <label for="">Minute <input class="period_hour" id="min" type="number" value="00" min="00" max="60"></label></div>
+                      <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+          </div>
+          <div class="Wednesday day_setting">
+            <h5>Wednesday</h5>
+            <div class="period1">1 Period 
+              <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="06" min="00" max="23"></label>
+               <label for="">Minute <input class="period_hour" id="min" type="number" value="00" min="00" max="60"></label></div>
+               <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+                  <div class="period1">2 Period
+                    <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="09" min="00" max="23"></label>
+                      <label for="">Minute <input class="period_hour" id="min" type="number" value="00" min="00" max="60"></label></div>
+                      <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+                  <div class="period1">3 Period
+                    <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="13" min="00" max="23"></label>
+                      <label for="">Minute <input class="period_hour" id="min" type="number" value="30" min="00" max="60"></label></div>
+                      <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+                  <div class="period1">4 Period
+                    <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="17" min="00" max="23"></label>
+                      <label for="">Minute <input class="period_hour" id="min" type="number" value="00" min="00" max="60"></label></div>
+                      <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+                  <div class="period1">5 Period
+                    <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="22" min="00" max="23"></label>
+                      <label for="">Minute <input class="period_hour" id="min" type="number" value="00" min="00" max="60"></label></div>
+                      <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+          </div>
+          <div class="Thursday day_setting">
+            <h5>Thursday</h5>
+            <div class="period1">1 Period 
+              <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="06" min="00" max="23"></label>
+               <label for="">Minute <input class="period_hour" id="min" type="number" value="00" min="00" max="60"></label></div>
+               <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+                  <div class="period1">2 Period
+                    <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="09" min="00" max="23"></label>
+                      <label for="">Minute <input class="period_hour" id="min" type="number" value="00" min="00" max="60"></label></div>
+                      <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+                  <div class="period1">3 Period
+                    <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="13" min="00" max="23"></label>
+                      <label for="">Minute <input class="period_hour" id="min" type="number" value="30" min="00" max="60"></label></div>
+                      <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+                  <div class="period1">4 Period
+                    <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="17" min="00" max="23"></label>
+                      <label for="">Minute <input class="period_hour" id="min" type="number" value="00" min="00" max="60"></label></div>
+                      <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+                  <div class="period1">5 Period
+                    <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="22" min="00" max="23"></label>
+                      <label for="">Minute <input class="period_hour" id="min" type="number" value="00" min="00" max="60"></label></div>
+                      <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+          </div>
+          <div class="Friday day_setting">
+            <h5>Friday</h5>
+            <div class="period1">1 Period 
+              <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="06" min="00" max="23"></label>
+               <label for="">Minute <input class="period_hour" id="min" type="number" value="00" min="00" max="60"></label></div>
+               <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+                  <div class="period1">2 Period
+                    <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="09" min="00" max="23"></label>
+                      <label for="">Minute <input class="period_hour" id="min" type="number" value="00" min="00" max="60"></label></div>
+                      <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+                  <div class="period1">3 Period
+                    <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="13" min="00" max="23"></label>
+                      <label for="">Minute <input class="period_hour" id="min" type="number" value="30" min="00" max="60"></label></div>
+                      <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+                  <div class="period1">4 Period
+                    <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="17" min="00" max="23"></label>
+                      <label for="">Minute <input class="period_hour" id="min" type="number" value="00" min="00" max="60"></label></div>
+                      <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+                  <div class="period1">5 Period
+                    <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="22" min="00" max="23"></label>
+                      <label for="">Minute <input class="period_hour" id="min" type="number" value="00" min="00" max="60"></label></div>
+                      <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+          </div>
+          <div class="Saturday day_setting">
+            <h5>Saturday</h5>
+            <div class="period1">1 Period 
+              <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="06" min="00" max="23"></label>
+               <label for="">Minute <input class="period_hour" id="min" type="number" value="00" min="00" max="60"></label></div>
+               <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+                  <div class="period1">2 Period
+                    <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="09" min="00" max="23"></label>
+                      <label for="">Minute <input class="period_hour" id="min" type="number" value="00" min="00" max="60"></label></div>
+                      <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+                  <div class="period1">3 Period
+                    <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="13" min="00" max="23"></label>
+                      <label for="">Minute <input class="period_hour" id="min" type="number" value="30" min="00" max="60"></label></div>
+                      <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+                  <div class="period1">4 Period
+                    <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="17" min="00" max="23"></label>
+                      <label for="">Minute <input class="period_hour" id="min" type="number" value="00" min="00" max="60"></label></div>
+                      <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+                  <div class="period1">5 Period
+                    <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="22" min="00" max="23"></label>
+                      <label for="">Minute <input class="period_hour" id="min" type="number" value="00" min="00" max="60"></label></div>
+                      <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+  
+          </div>
+          <div class="Sunday day_setting">
+            <h5>Sunday</h5>
+            <div class="period1">1 Period 
+              <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="06" min="00" max="23"></label>
+               <label for="">Minute <input class="period_hour" id="min" type="number" value="00" min="00" max="60"></label></div>
+               <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+                  <div class="period1">2 Period
+                    <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="09" min="00" max="23"></label>
+                      <label for="">Minute <input class="period_hour" id="min" type="number" value="00" min="00" max="60"></label></div>
+                      <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+                  <div class="period1">3 Period
+                    <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="13" min="00" max="23"></label>
+                      <label for="">Minute <input class="period_hour" id="min" type="number" value="30" min="00" max="60"></label></div>
+                      <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+                  <div class="period1">4 Period
+                    <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="18" min="00" max="23"></label>
+                      <label for="">Minute <input class="period_hour" id="min" type="number" value="00" min="00" max="60"></label></div>
+                      <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+                  <div class="period1">5 Period
+                    <div><label for="">Hour <input class="period_hour" id="Hour" type="number" value="22" min="00" max="23"></label>
+                      <label for="">Minute <input class="period_hour" id="min" type="number" value="00" min="00" max="60"></label></div>
+                      <div><label for=""> ℃ <input class="period_hour" id="cel" type="number" value="21" min="5" max="35"></label></div>
+                  </div>
+        </div> 
+            <button class="save_day">Save</button>
+          </div>
+
+
+
+        <div class="idecator_temp ">
+         <div class="show_temp">
+            <div class="indecator">
+               <div class="big_indec"><span></span></div>
+               <div class="litle_indec">
+                <div class="top_indec"><span></span></div>
+                <div class="bottom_indec">
+                  <div class="animation eco_anim"></div>
+                  <div class="animation fire"></div>
+                  <div class="animation cold"></div>
+                  <div class="animation off_anim"></div>
+                </div>
+               </div>
+                
+            </div>
+
+
+            <div class="inpur_range hidden">
+         <button class="minus_btn"></button> 
+             <input  class="range" type="range" min="5" max="35" step="0.5">
+          <button class="plus_btn"></button>    
+          </div>
+        
+        </div>
+
+        </div>
+
+
+
+      </div>
+
+
+</div>
+
+<div class="fire" ></div>
+<script type="module" src="./index.js">
+</script>
+
+
+
+  </body>
+</html>

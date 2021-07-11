@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Jomhuria&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+font-family: 'Fjalla One', sans-serif;
+
+}
+body{
+  overflow-x: hidden;
+}
+.row{
+  width: 100vw;
+  height: 110vh;
+  background:linear-gradient(rgba(0, 0, 0,0.45),rgba(0, 0, 0, 0.5)),url(img/dom.jpg);
+  background-repeat: no-repeat;
+
+}
+.content{
+  margin: auto;
+  width: 90vw;
+  height: 98vh;
+
+}
+.nav{
+display: flex;
+width: 90vw;
+height: 12vh;
+
+justify-content: space-around;
+align-items: center;
+}
+.nav button{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+}
+.setap_div{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.teack_btn{
+  box-shadow:inset 0px 0px 16px 15px rgba(0,0,0,0.3);
+}
+
+
+.off{
+  background-image:url(img/power-off.png);
+  background-size: cover;
+
+}
+.eco_off{
+
+  background-image: linear-gradient(rgba(0, 0, 0,0.45),rgba(0, 0, 0, 0.5)),url(img/8_122762.png);
+    background-size:  cover;
+}
+.eco_active{
+background-image: url(img/8_122762.png);
+background-size:  cover;
+}
+.auto{
+
+  background-image: url(img/time.png);
+    background-size: cover;
+}
+.setap_btn{
+  background-image: url(img/thermometer_1.png);
+  background-size: contain;
+}
+.nav button:hover{
+transform:scale(0.9);
+}
+.date{
+  display: flex;
+  width: 90vw;
+  height: 5vh;
+
+   justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  font-size: 30px;
+  /* background: rgba(5, 28, 64,0.4); */
+  color: aliceblue;
+  }
+.day{
+  margin-right: 3%;
+}
+.time{
+  margin-left: 8%;
+}
+.idecator_temp{
+  width: 100%;
+  height:78vh;
+  display: flex;
+  margin-top: -100px;
+}
+.show_temp{
+margin: auto;
+width: 100vh;
+height:70%;
+
+border-radius: 100px 100px 18px 18px;
+}
+.indecator{
+  max-width: 60vw;
+  height: 85%;
+  background:rgba(6, 0, 29,0.8);
+  margin: auto;
+  display: flex;
+background:linear-gradient(rgba(6, 0, 29,0.8),rgba(6, 0, 29,0.8)), url(img/spidometr_strelka_skorost_120335_1280x1024.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 100px 100px 0 0 ;
+}
+.inpur_range{
+
+  margin: auto;
+  align-items: center;
+  display: flex;
+
+  align-items: center;
+  justify-content:space-around;
+  max-width: 60vw;
+  height: 8vh;
+}
+.range{
+  width:50vw;
+  height: 100px;
+}
+.range{
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  height: 30px;
+  background: #d3d3d3;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border-start-start-radius:100%;
+
+}
+.range:hover{
+  opacity: 1;
+}
+.range::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 30px;
+
+  background: hsl(187, 100%, 36%);
+  cursor: pointer;
+}
+.range::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+.range{
+  background: linear-gradient(90deg,rgba(7,11,210,0.9) 34%, #f10606 68%);
+}
+.minus_btn{
+ width: 50px; 
+ height: 50px;
+ background:url(img/minus.svg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ border-radius: 50%;
+ border: none;
+
+}
+.plus_btn{
+  width: 50px; 
+  height: 50px;
+  background:url(img/plus.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  border: none;
+}
+.big_indec{
+  width: 50%;
+  height: 100%;
+  border-right: 1px solid rgb(4, 2, 116);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 150px;
+  color: aliceblue;
+ }
+.litle_indec{
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+.top_indec{
+  height: 70%;
+
+  font-size: 60px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom_indec{
+  height: 30%;
+  border: 1px solid rgb(1, 1, 36);
+}
+.Settings{
+  width: 100%;
+  height:5vh;
+  padding-top: 40px;
+}
+.setting_btn{
+  width: 40px;
+  height: 40px;
+  float: right;
+  margin-right: 20px;
+  background: url(img/gear.png);
+  background-size: cover;
+  border-radius: 50%;
+  border: none;
+}
+.setting_block{
+  width: 100%;
+  height: 10vh;
+
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255,0.5);
+}
+.off_setting{
+  width: 100%;
+  height: 5vh;
+border-bottom: aliceblue 1px solid;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.off_icon{
+  width: 40px;
+  height: 40px;
+
+  margin-left: 80px;
+  background: url(img/power-off.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.off_input_value{
+  width: 50px;
+  height: 40px;
+
+
+}
+.off_input_value input{
+  width: 100%;
+  height: 99%;
+  border: none;
+  background:rgba(22, 37, 78,0.8);
+  color: aliceblue;
+  font-size: 25px;
+  text-align: center;
+
+  
+}
+.save_of{
+  width: 100px;
+  height: 40px;
+  margin-right: 20px;
+  background: rgba(14, 95, 161);
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  color: aliceblue;
+}
+.eco_setting{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content:space-between;
+  align-items: center;
+}
+.eco_icon{
+  width: 40px;
+  height: 40px;
+
+  margin-left: 80px;
+  background: url(img/8_122762.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.eco_input_value input{
+  width: 100%;
+  height: 99%;
+  border: none;
+  background:rgba(22, 37, 78,0.8);
+  color: aliceblue;
+  font-size: 25px;
+  text-align: center;
+  
+}
+.save_of_div{
+  width: 100px;
+  height: 40px;
+  margin-left: 12px;
+}
+.save_of{
+  width: 100px;
+  height: 40px;
+  background: rgba(14, 95, 161);
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  color: aliceblue;
+}
+.eco_input_value{
+  width: 50px;
+  height: 40px;
+
+
+}
+.auto_setting{
+  width: 100%;
+  height: 4vh;
+
+  display: flex;
+  align-items: center;
+}
+.auto_setting p{
+  font-size: 25px;
+  margin-left: 4%;
+  color: aliceblue;
+  cursor: pointer;
+}
+.days_setting{
+  width: 100%;
+  height: 77%;
+  background: rgba(255, 255, 255,0.6);
+  border: 1px solid rebeccapurple;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.day_setting{
+  width: 28vw;;
+  height: 23vh;
+  border:1px solid rgb(156, 171, 255);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.save_day{
+  width: 150px;
+  height: 50px;
+  margin-right: 150px;
+  background: rgba(14, 95, 161);
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  color: aliceblue;
+}
+.day_setting h5{
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 20px;
+
+}
+.Sunday{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+.period1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+}
+select{
+  background:rgba(156, 171, 255,0.2) ;
+  border: none;
+  outline: none;
+}
+option{
+  background-color:rgb(156, 171, 255 );
+
+}
+.period_hour{
+  border: none;
+  background:rgba(22, 37, 78,0.8);
+  color: aliceblue;
+  font-size: 25px;
+  text-align: center;
+  outline: none;
+  width: 50px;
+}
+.bottom_indec{
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: flex-end;
+}
+.animation{
+  width: 25%;
+  height: 70%;
+  /* border: 1px solid red; */
+
+}
+.fire{
+  background: url(img/fire.png);
+  background-repeat: no-repeat;
+  background-size:70px;
+  align-items: center;
+  opacity: 0;
+}
+.cold{
+  background: url(img/snowflake.png);
+  background-repeat: no-repeat;
+  background-size:70px;
+  align-items: center;
+  opacity: 0;
+}
